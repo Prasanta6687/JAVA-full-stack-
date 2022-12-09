@@ -2,7 +2,7 @@
 import java.util.Scanner;
 public class Palindrome{
     public static void main(String []args) {
-        int r = 0, sum = 0, k = 0;
+        int r = 0, sum = 0;
         System.out.println("Enter a number");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -11,7 +11,7 @@ public class Palindrome{
             sum = (sum * 10) + r;
             n = n / 10;
         }
-        if (k == sum)
+        if (n == sum)
             System.out.println("Number is Palindrome");
         else
             System.out.println("Number is not Palindrome");
